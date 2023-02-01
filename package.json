@@ -1,6 +1,6 @@
 {
   "name": "@yuankui/use-boolean",
-  "version": "0.0.1",
+  "version": "1.0.7",
   "description": "simply deal with boolean state in react",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
