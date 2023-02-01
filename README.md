@@ -1,23 +1,23 @@
-# React hook - useBoolean
+# @yuankui/use-boolean
 
-## Installation 
-```sh
-npm install redux-commands --save
-yarn add redux-commands
+[![NPM version](https://img.shields.io/npm/v/@yuankui/use-boolean.svg?style=flat)](https://npmjs.org/package/@yuankui/use-boolean)
+[![NPM downloads](http://img.shields.io/npm/dm/@yuankui/use-boolean.svg?style=flat)](https://npmjs.org/package/@yuankui/use-boolean)
+
+## Install
+
+```bash
+$ yarn install
 ```
 
-## Usage
-
-### Basic Usage
-
-```typescript
-const toggle = useBoolean(false);
-
-return <Modal 
-    visible={toggle.value} 
-    onVisibleChange={toggle.setValue} 
-    onHide={toggle.setFalsy} 
-    onShow={toggle.setTruly}>
-    ...
-</Modal>
+```bash
+$ npm run dev
+$ npm run build
 ```
+
+## Options
+
+TODO
+
+## LICENSE
+
+MIT

@@ -1,13 +1,14 @@
-import { useState, useMemo, useCallback } from "react";
+import { useCallback, useMemo, useState } from 'react';
 
-export const useBoolean = (v: boolean) => {
+
+const useBoolean = (v: boolean) => {
   const [value, setValue] = useState(v);
 
   const toggle = useCallback(() => setValue((prev) => !prev), [setValue]);
   const setFalse = useCallback(() => setValue(false), []);
   const setTrue = useCallback(() => setValue(true), []);
 
-  const cached = useMemo(
+  return useMemo(
     () => ({
       value,
       setValue,
@@ -16,8 +17,8 @@ export const useBoolean = (v: boolean) => {
       setTrue,
       setFalse,
     }),
-    [value, toggle, setTrue, setFalse]
+    [value, toggle, setTrue, setFalse],
   );
-
-  return cached;
 };
+
+export default useBoolean;
